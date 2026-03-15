@@ -1,0 +1,5 @@
+Business Objective 1: Average value of sales per year
+============================================================
+Year 2023: Transactions=94, Total Sales=20,016.91, Avg Sale Value=212.95
+Year 2024: Transactions=81, Total Sales=15,305.51, Avg Sale Value=188.96
+Year 2025: Transactions=25, Total Sales=5,212.99, Avg Sale Value=208.52

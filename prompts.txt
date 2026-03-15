@@ -1,0 +1,16 @@
+Prompts used for AI-assisted development (as per Final Project instructions)
+=============================================================================
+
+1) "I need to build a data engineering final project: merge two data sources into a data warehouse and fulfill at least 2 business objectives. One source should be like object storage (e.g. S3), the other on-premise files. I have the instructions in Lecture10.pdf. Can you outline the steps and project structure?"
+
+2) "Create two sample CSV files for me – one for sales transactions (object storage style) with columns like transaction_id, date, product_id, customer_id, quantity, unit_price, amount, region. The other for products (on-premise) with product_id, product_name, category, unit_cost. Generate realistic sample data for both."
+
+3) "Write the PostgreSQL schema for this: staging tables for the two sources and a warehouse fact table that merges sales with product info. Include init_schemas.sql and schema.sql."
+
+4) "Implement the pipeline in Python using Prefect. It should load both CSVs into staging, merge into the warehouse table, then compute two business objectives: (1) average value of sales per year, (2) total sales by product category. Save the results to CSV and TXT in an outputs folder."
+
+5) "I don't have PostgreSQL installed. Can you give me a version of the pipeline that uses SQLite instead and produces the same output files? So the project can run without any database setup."
+
+6) "Write a README with instructions for how to run the project – both the SQLite option and the PostgreSQL option. Include project structure, what the two business objectives are, and a submission checklist based on Lecture10."
+
+7) "Add a prompts.txt file listing the prompts I used for this project, and a folder (outputs/screenshots) where I can put screenshots of the pipeline run and the result files for submission."

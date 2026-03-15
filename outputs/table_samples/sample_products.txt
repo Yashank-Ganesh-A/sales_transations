@@ -1,0 +1,13 @@
+Table: products
+Columns: product_id, product_name, category, unit_cost
+------------------------------------------------------------
+101	Widget A	Electronics	15.0
+102	Widget B	Electronics	25.0
+103	Desk Lamp	Home	30.0
+104	Office Chair	Furniture	120.0
+105	Notebook Set	Stationery	8.0
+106	Monitor Stand	Electronics	45.0
+107	Bookshelf	Furniture	85.0
+108	Pen Pack	Stationery	5.0
+109	Desk Organizer	Home	22.0
+110	USB Hub	Electronics	35.0

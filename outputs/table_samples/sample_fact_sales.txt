@@ -1,0 +1,18 @@
+Table: fact_sales
+Columns: transaction_id, sale_date, product_id, product_name, category, customer_id, quantity, unit_price, amount, region, year
+------------------------------------------------------------
+1	2024-10-16 00:00:00	102	Widget B	Electronics	1250	1	44.83	44.83	South	2024
+2	2023-05-23 00:00:00	102	Widget B	Electronics	1432	5	31.74	158.7	North	2023
+3	2023-01-31 00:00:00	102	Widget B	Electronics	1616	2	34.65	69.3	North	2023
+4	2024-07-28 00:00:00	104	Office Chair	Furniture	1459	5	184.27	921.35	East	2024
+5	2023-01-07 00:00:00	103	Desk Lamp	Home	1159	4	44.17	176.68	South	2023
+6	2025-02-20 00:00:00	106	Monitor Stand	Electronics	1099	1	57.34	57.34	East	2025
+7	2023-12-19 00:00:00	110	USB Hub	Electronics	1747	3	64.6	193.8	West	2023
+8	2024-07-03 00:00:00	102	Widget B	Electronics	1300	4	31.58	126.32	East	2024
+9	2024-08-14 00:00:00	104	Office Chair	Furniture	1233	1	148.4	148.4	East	2024
+10	2023-03-23 00:00:00	104	Office Chair	Furniture	1464	1	180.49	180.49	East	2023
+11	2023-06-16 00:00:00	106	Monitor Stand	Electronics	1273	3	61.54	184.62	North	2023
+12	2024-09-15 00:00:00	103	Desk Lamp	Home	1167	5	53.5	267.5	West	2024
+13	2024-01-24 00:00:00	105	Notebook Set	Stationery	1332	5	11.01	55.05	North	2024
+14	2023-08-23 00:00:00	101	Widget A	Electronics	1067	3	22.81	68.43	South	2023
+15	2024-08-03 00:00:00	106	Monitor Stand	Electronics	1405	2	77.6	155.2	West	2024

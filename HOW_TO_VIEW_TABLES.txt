@@ -1,0 +1,55 @@
+Where the SQL is & how to show the tables
+========================================
+
+WHICH SQL WE USE
+----------------
+• PostgreSQL (full setup):
+  - sql/init_schemas.sql   → creates "staging" and "warehouse" schemas
+  - sql/schema.sql        → creates the 3 tables (see below)
+
+• SQLite (what you ran):
+  The pipeline script (pipeline/run_pipeline_sqlite.py) creates the same
+  logical structure inside warehouse.db: sales_transactions, products,
+  and fact_sales (the merged warehouse table).
+
+THE THREE TABLES (same idea in both PostgreSQL and SQLite)
+-----------------------------------------------------------
+1. staging.sales_transactions  (or table "sales_transactions" in SQLite)
+   → Raw data from object storage CSV (transaction_id, date, product_id, customer_id, quantity, unit_price, amount, region)
+
+2. staging.products  (or table "products" in SQLite)
+   → Raw data from on-premise CSV (product_id, product_name, category, unit_cost)
+
+3. warehouse.fact_sales  (or table "fact_sales" in SQLite)
+   → MERGED table: each row = one sale with product details (sale_date, product_name, category, amount, region, year, etc.)
+
+
+HOW TO SHOW THE TABLES (for your video)
+---------------------------------------
+
+Option A – SQLite (after you ran: python pipeline/run_pipeline_sqlite.py)
+
+  In terminal:
+    cd /Users/harshavardhini/Cursor/Yashank
+    sqlite3 warehouse.db
+
+  Then type:
+    .tables
+    (shows: fact_sales  products  sales_transactions)
+
+    SELECT * FROM sales_transactions LIMIT 5;
+    SELECT * FROM products LIMIT 5;
+    SELECT * FROM fact_sales LIMIT 10;
+
+    .quit
+
+Option B – View exported samples (no typing in sqlite3)
+  Run once:  python scripts/export_table_samples.py
+  Then open the files in outputs/table_samples/ and show those in the video.
+
+Option C – PostgreSQL (if you have it)
+  After running: python pipeline/run_pipeline.py
+  In psql or any PostgreSQL client, connect to database "data_warehouse", then:
+    \dt staging.*
+    \dt warehouse.*
+    SELECT * FROM warehouse.fact_sales LIMIT 10;

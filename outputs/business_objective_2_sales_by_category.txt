@@ -1,0 +1,6 @@
+Business Objective 2: Total sales by product category
+============================================================
+Furniture: Transactions=52, Total Sales=24,776.40
+Electronics: Transactions=64, Total Sales=8,725.51
+Home: Transactions=44, Total Sales=5,612.36
+Stationery: Transactions=40, Total Sales=1,421.14
